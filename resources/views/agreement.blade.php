@@ -2,28 +2,22 @@
 
 @section('content')
 
-<!-- ##### Breadcumb Area Start ##### -->
-<div class="breadcumb-area box-shadow bg-overlay-header">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center">
+<!-- ##### Course Area Start ##### -->
+
+<div class="cryptos-feature-area section-padding-100-50">
+    <div class="container-fluid">
+        <div class="row">
             <div class="col-12 col-md-12">
-                <div class="breadcumb-text text-center">
-                    <h2>Solicita tu convenio</h2>
+                <div class="section-heading mx-auto section-padding-50-0">
+                    <h3 class="text-center">Solicitar convenio</h3>
+                    <div class="heading-line"></div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- ##### Breadcumb Area End ##### -->
-
-<!-- ##### Course Area Start ##### -->
-
-<div class="cryptos-feature-area section-padding-50-50">
-    <div class="container-fluid">
         <!--Incluir mensaje de error-->
         @if (count($errors) > 0)
         <div class="row mb-50">
-            <div class="col-md-12"> 
+            <div class="col-md-10 offset-md-1 col-12"> 
                 @include('partials.errors')
             </div>
         </div>
@@ -31,7 +25,7 @@
 
         <!--Incluir mensaje de éxito-->
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-10 offset-md-1 col-12">
                 @include('partials.messages')
             </div>
         </div>
@@ -39,7 +33,7 @@
         <form action="{{route('agreement.store')}}" method="POST">
             {{ csrf_field() }}
             <div class="row">
-                <div class="col-md-9 col-xs-12">
+                <div class="col-md-10 offset-md-1 col-12">
                     <p class="size-12px color-black" style="letter-spacing: .5px">Solicita tu convenio de atención preferente. Ante cualquier duda o sugerencia puedes también puedes escribirnos a <b>{{$companyInfo->email_2}}</b></p>
                     <br>
                     <div class="row">

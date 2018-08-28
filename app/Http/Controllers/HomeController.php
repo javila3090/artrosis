@@ -133,15 +133,13 @@ class HomeController extends Controller
         return view('fonasa_isapre',compact('companyInfo'));
     }
 
-    public function kinesiologist(){
+    public function learn(){
 
-        $kinesiologist = Section::where('section_type_id',15)->first();
-        $kinesiologist_areas = Banner::where('banner_type_id',11)->get();
-        $tips = Banner::where('banner_type_id',10)->get();
-        $symptoms = Banner::where('banner_type_id',9)->get();
+        $osteoarthritis = Section::where('section_type_id',15)->first();
+        $osteoporosis = Section::where('section_type_id',17)->first();
         $companyInfo = CompanyInfo::orderBy('created_at', 'desc')->first();
 
-        return view('kinesiologist',compact('companyInfo','kinesiologist','kinesiologist_areas','tips','symptoms'));
+        return view('learn',compact('companyInfo','osteoarthritis','osteoporosis'));
     }
 
     public function kinesiologist_areas(){

@@ -227,6 +227,10 @@ img {
     color: $dark-blue !important;
 }
 
+.color-text{
+    color: $text-color !important;
+}
+
 .card-fonasa{
     min-height: 250px !important;
     max-height: 250px !important;
@@ -585,7 +589,7 @@ img {
         display: block;
         width: 60px;
         height: 60px;
-        border: 2px solid rgba(255, 255, 255, 0.5);
+        border: 3px solid rgba(255, 255, 255, 0.5);
         border-bottom-color: $white-color;
         border-radius: 50%;
         position: absolute;
@@ -642,7 +646,7 @@ img {
     background-position: center center;
     background-size: cover;
     &::after {
-        background-color: rgba(255,255,255,0.3);
+        background-color: rgba(255,255,255,0.5);
         position: absolute;
         z-index: -1;
         top: 0;
@@ -831,8 +835,8 @@ textarea:focus {
         background-color: #fff;
         text-transform: uppercase !important;
         color: #fff !important;
-        border-top: 7px solid $border-color;
-        border-bottom: 3px solid $border-color;
+        //border-top: 7px solid $border-color;
+        border-bottom: 2px solid $border-color;
         @media #{$breakpoint-xs} {
             height: 90px;
         }
@@ -869,7 +873,7 @@ textarea:focus {
         .classynav ul li .megamenu li a {
             font-size: 12px;
             background-color: #fff;
-            border-bottom: 1px solid #3599db;
+            border-bottom: 1px solid $bg-default;
         }
         .classynav {
             .header-newsletter-form {
@@ -1063,7 +1067,7 @@ textarea:focus {
     z-index: 1;
     padding-left: 45px;
     padding-right: 45px;
-    border-bottom: 3px solid $border-color;
+    //border-bottom: 3px solid $border-color;
     @media #{$breakpoint-xs} {
         padding-left: 0;
         padding-right: 0;

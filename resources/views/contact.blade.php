@@ -1,35 +1,23 @@
- @extends('layouts.base')
+@extends('layouts.base')
 
- @section('content')
- <script type='text/javascript'>var centreGot = false;</script>
+@section('content')
+<script type='text/javascript'>var centreGot = false;</script>
 
- {!! $map['map_js'] !!}
- <!-- ##### Breadcumb Area Start ##### -->
- <div class="breadcumb-area box-shadow bg-overlay-header">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center">
-            <div class="col-12 col-md-12">
-                <div class="breadcumb-text text-center color-black">
-                    <h2>Contacto</h2>
-                </div>
-            </div>
-        </div>
-    </div>        
-</div>
-<!-- ##### Breadcumb Area End ##### -->
-
-<div class="contact-map-area section-padding-50-0">
-    <!-- ##### Google Maps ##### -->
-    <div class="map-area">
-        {!! $map['map_html'] !!}
-    </div>
-</div>
+{!! $map['map_js'] !!}
 
 <!-- ##### Contact Area Start ##### -->
 <section class="contact-area section-padding-100-0">
     <div class="container">
         <div class="row">
-
+            <div class="col-12 col-md-12">
+                <div class="section-heading mx-auto section-padding-50-0">
+                    <h3 class="text-center">Contacto</h3>
+                    <div class="heading-line"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
             <!-- Contact Information -->
             <div class="col-12 col-lg-6">
                 <div class="contact-information mb-100">
@@ -72,43 +60,51 @@
             <!-- Contact Form Area -->
             <div class="col-12 col-lg-6">
                 <div class="contact-form-area mb-100">
-                <div id="sendmessage">
-                    <div class="alert alert-success">
-                        <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
-                        <b>¡Gracias por escribirnos!</b> Su mensaje será respondido a la mayor brevedad posible.
+                    <div id="sendmessage">
+                        <div class="alert alert-success">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
+                            <b>¡Gracias por escribirnos!</b> Su mensaje será respondido a la mayor brevedad posible.
+                        </div>
                     </div>
+                    <div id="errormessage"></div>                    
+                    <form action="" method="post" class="form-horizontal contactForm" role="form">
+                        {{ csrf_field() }}
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Su nombre" data-rule="minlen:4" data-msg="Por favor ingrese al menos 4 carácteres" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Su email" data-rule="email" data-msg="Por favor ingrese un correo electrónico válido" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Por favor ingrese al menos 8 carácteres de asunto" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control datepicker" name="contact_date" placeholder="¿Cuando desea ser contactado?" autocomplete="off">
+                        </div>                  
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor ingrese su mensaje" placeholder="Mensaje"></textarea>
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-default btn-2 mt-30 btn-submit" type="submit">Enviar mensaje</button>
+                            <button type="button" class="btn btn-default btn-2 mt-30 btn-sending" disabled="true" style="display: none;">Enviando mensaje <i class="fa fa-spinner fa-spin"></i></button>
+                        </div>
+                    </form>
                 </div>
-                <div id="errormessage"></div>                    
-                <form action="" method="post" class="form-horizontal contactForm" role="form">
-                    {{ csrf_field() }}
-                    <div class="form-group">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Su nombre" data-rule="minlen:4" data-msg="Por favor ingrese al menos 4 carácteres" />
-                      <div class="validation"></div>
-                  </div>
-                  <div class="form-group">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Su email" data-rule="email" data-msg="Por favor ingrese un correo electrónico válido" />
-                      <div class="validation"></div>
-                  </div>
-                  <div class="form-group">
-                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Por favor ingrese al menos 8 carácteres de asunto" />
-                      <div class="validation"></div>
-                  </div>
-                  <div class="form-group">
-                      <input class="form-control datepicker" name="contact_date" placeholder="¿Cuando desea ser contactado?" autocomplete="off">
-                  </div>                  
-                  <div class="form-group">
-                      <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor ingrese su mensaje" placeholder="Mensaje"></textarea>
-                      <div class="validation"></div>
-                  </div>
-                  <div class="form-group">
-                      <button class="btn btn-info btn-2 mt-30 btn-submit" type="submit">Enviar mensaje</button>
-                      <button type="button" class="btn btn-info btn-2 mt-30 btn-sending" disabled="true" style="display: none;">Enviando mensaje <i class="fa fa-spinner fa-spin"></i></button>
-                  </div>
-              </form>
-          </div>
-      </div>
-  </div>
-</div>
+            </div>
+        </div>
+    </div>
 </section>
+
+<!-- Map -->
+<div class="contact-map-area section-padding-0-100 container">
+    <!-- ##### Google Maps ##### -->
+    <div class="map-area  box-shadow">
+        {!! $map['map_html'] !!}
+    </div>
+</div>
 <!-- ##### Contact Area End ##### -->
 @endsection

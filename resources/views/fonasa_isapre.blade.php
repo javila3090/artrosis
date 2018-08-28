@@ -2,24 +2,18 @@
 
 @section('content')
 
-<!-- ##### Breadcumb Area Start ##### -->
-<div class="breadcumb-area box-shadow bg-overlay-header">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center">
+<!-- ##### Course Area Start ##### -->
+
+<div class="cryptos-feature-area section-padding-100-50">
+    <div class="container-fluid">
+        <div class="row">
             <div class="col-12 col-md-12">
-                <div class="breadcumb-text text-center">
-                    <h2>Fonasa e Isapres</h2>
+                <div class="section-heading mx-auto section-padding-50-0">
+                    <h3 class="text-center">Fonasa e Isapres</h3>
+                    <div class="heading-line"></div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- ##### Breadcumb Area End ##### -->
-
-<!-- ##### Course Area Start ##### -->
-
-<div class="cryptos-feature-area section-padding-50-50">
-    <div class="container-fluid">
         <div class="row">
             <div class="col-md-3 col-sm-6 col-12">
                 <div class="card card-fonasa card-fonasa bg-faded mb-50 wow fadeInRightBig">

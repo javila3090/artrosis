@@ -5,7 +5,7 @@
                     <nav class="classy-navbar justify-content-between" id="cryptosNav">
 
                         <!-- Logo -->
-                        <a href="/"><img src="{{asset('img/logo.png')}}" class="nav-brand float-left img-fluid logo"></a>
+                        <a href="/" class="title-regular size-18px">Centro de tratamiento de Artrosis</a>
 
 
                         <!-- Navbar Toggler -->
@@ -25,7 +25,7 @@
                             <div class="classynav">
                                 <ul class="smooth-scroll ">
                                     <li><a href="{{route('home')}}">Inicio</a></li>
-                                    <li><a href="{{route('quote')}}">Cotizar</a></li>
+                                    <!--<li><a href="{{route('quote')}}">Cotizar</a></li>-->
                                     <li><a href="#">Pacientes</a>
                                         <ul class="dropdown">
                                             <li><a href="{{route('aboutUs')}}">Nosotros</a></li>
@@ -34,14 +34,7 @@
                                             <li><a href="{{route('agreement')}}">Solicitar convenio</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Aprende</a>
-                                        <ul class="dropdown">
-                                            <li><a href="{{route('kinesiologist')}}">¿Qué es un Kinesiólogo?</a></li>
-                                            <li><a href="{{route('kinesiologist_areas')}}">Áreas kinesiología</a></li>
-                                            <li><a href="{{route('information')}}">Información útil</a></li>
-                                            <li><a href="{{route('symptoms')}}">Síntomas - Dolores</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><a href="{{route('learn')}}">Aprende</a></li>
                                     <li><a href="{{route('videos')}}">Videos</a></li>
                                     <li><a href="{{route('contact')}}">Contacto</a></li>
                                     @if(\Auth::user())

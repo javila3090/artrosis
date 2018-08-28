@@ -25,7 +25,7 @@ Route::get('servicios', 'HomeController@services')->name('services');
 
 Route::get('entidades', 'HomeController@entities')->name('fonasa_isapre');
 
-Route::get('kinesiologia', 'HomeController@kinesiologist')->name('kinesiologist');
+Route::get('aprende', 'HomeController@learn')->name('learn');
 
 Route::get('kinesiologia-areas', 'HomeController@kinesiologist_areas')->name('kinesiologist_areas');
 

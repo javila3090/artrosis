@@ -16840,6 +16840,10 @@ img {
   color: #144E75 !important;
 }
 
+.color-text {
+  color: #444 !important;
+}
+
 .card-fonasa {
   min-height: 250px !important;
   max-height: 250px !important;
@@ -17188,9 +17192,9 @@ img {
 
 /* Preloader */
 #preloader {
-  background: #0d104d;
-  background: -webkit-gradient(linear, left top, right top, from(#0d104d), to(#28408b));
-  background: linear-gradient(to right, #0d104d, #28408b);
+  background: #DA5538;
+  background: -webkit-gradient(linear, left top, right top, from(#DA5538), to(#FA8072));
+  background: linear-gradient(to right, #DA5538, #FA8072);
   width: 100%;
   height: 100%;
   position: fixed;
@@ -17204,7 +17208,7 @@ img {
   display: block;
   width: 60px;
   height: 60px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 3px solid rgba(255, 255, 255, 0.5);
   border-bottom-color: #ffffff;
   border-radius: 50%;
   position: absolute;
@@ -17266,7 +17270,7 @@ img {
 }
 
 .bg-overlay::after {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
   position: absolute;
   z-index: -1;
   top: 0;
@@ -17301,7 +17305,7 @@ img {
   padding-right: 0;
   width: 30px;
   height: 30px;
-  background-color: #3599db;
+  background-color: #DA5538;
   line-height: 30px;
   text-align: center;
   position: absolute;
@@ -17333,7 +17337,7 @@ textarea:focus {
 
 /* ScrollUp */
 #scrollUp {
-  background-color: #3599db;
+  background-color: #DA5538;
   border-radius: 0;
   bottom: 60px;
   -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
@@ -17376,7 +17380,7 @@ textarea:focus {
   transition: all 500ms;
   font-weight: 700;
   text-transform: uppercase;
-  border-bottom: 3px solid #3599db;
+  border-bottom: 3px solid #DA5538;
 }
 
 .cryptos-btn.active, .cryptos-btn:hover, .cryptos-btn:focus {
@@ -17387,7 +17391,7 @@ textarea:focus {
 }
 
 .cryptos-btn.btn-2 {
-  background-color: #3599db;
+  background-color: #DA5538;
   border-bottom: 3px solid #292929;
   color: #ffffff;
 }
@@ -17395,19 +17399,19 @@ textarea:focus {
 .cryptos-btn.btn-2:hover, .cryptos-btn.btn-2:focus {
   color: #292929;
   background-color: #eef3f6;
-  border-bottom: 3px solid #3599db;
+  border-bottom: 3px solid #DA5538;
 }
 
 .cryptos-btn.btn-3 {
   background-color: #292929;
-  border-bottom: 3px solid #3599db;
+  border-bottom: 3px solid #DA5538;
   color: #ffffff;
 }
 
 .cryptos-btn.btn-3:hover, .cryptos-btn.btn-3:focus {
   color: #292929;
   background-color: #eef3f6;
-  border-bottom: 3px solid #3599db;
+  border-bottom: 3px solid #DA5538;
 }
 
 /* :: 5.0 Header Area CSS */
@@ -17450,7 +17454,7 @@ textarea:focus {
 }
 
 .header-area .top-header .top-headline p span {
-  color: #3599db;
+  color: #DA5538;
 }
 
 .header-area .top-header .login-faq-earn-money a {
@@ -17467,7 +17471,7 @@ textarea:focus {
 }
 
 .header-area .top-header .login-faq-earn-money a:hover, .header-area .top-header .login-faq-earn-money a:focus, .header-area .top-header .login-faq-earn-money a.active {
-  color: #3599db;
+  color: #DA5538;
 }
 
 .header-area .cryptos-main-menu {
@@ -17478,8 +17482,7 @@ textarea:focus {
   background-color: #fff;
   text-transform: uppercase !important;
   color: #fff !important;
-  border-top: 7px solid #3599db;
-  border-bottom: 3px solid #3599db;
+  border-bottom: 2px solid #DA5538;
 }
 
 @media only screen and (max-width: 767px) {
@@ -17518,7 +17521,7 @@ textarea:focus {
 }
 
 .header-area .cryptos-main-menu .classy-navbar .classynav ul li a:hover, .header-area .cryptos-main-menu .classy-navbar .classynav ul li a:focus {
-  color: #3599db;
+  color: #DA5538;
 }
 
 .header-area .cryptos-main-menu breakpoint-off .classynav ul li .dropdown {
@@ -17530,7 +17533,7 @@ textarea:focus {
 .header-area .cryptos-main-menu .classynav ul li .megamenu li a {
   font-size: 12px;
   background-color: #fff;
-  border-bottom: 1px solid #3599db;
+  border-bottom: 1px solid #DA5538;
 }
 
 .header-area .cryptos-main-menu .classynav .header-newsletter-form {
@@ -17593,21 +17596,21 @@ textarea:focus {
   font-weight: 600;
   color: #292929;
   cursor: pointer;
-  border-bottom: 2px solid #3599db;
+  border-bottom: 2px solid #DA5538;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
 }
 
 .header-area .cryptos-main-menu .classynav .header-newsletter-form form button:hover {
   background-color: #292929;
-  color: #3599db;
+  color: #DA5538;
 }
 
 .megamenu-slides .owl-prev,
 .megamenu-slides .owl-next {
-  background: #0d104d;
-  background: -webkit-gradient(linear, left top, right top, from(#0d104d), to(#28408b));
-  background: linear-gradient(to right, #0d104d, #28408b);
+  background: #DA5538;
+  background: -webkit-gradient(linear, left top, right top, from(#DA5538), to(#FA8072));
+  background: linear-gradient(to right, #DA5538, #FA8072);
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -17643,9 +17646,9 @@ textarea:focus {
   height: 750px;
   position: relative;
   z-index: 1;
-  background: #0d104d;
-  background: -webkit-gradient(linear, left top, right top, from(#0d104d), to(#28408b));
-  background: linear-gradient(to right, #0d104d, #28408b);
+  background: #DA5538;
+  background: -webkit-gradient(linear, left top, right top, from(#DA5538), to(#FA8072));
+  background: linear-gradient(to right, #DA5538, #FA8072);
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -17695,7 +17698,7 @@ textarea:focus {
 }
 
 .hero-slides .single-hero-slide h2 span {
-  color: #3599db;
+  color: #DA5538;
 }
 
 .hero-slides .single-hero-slide h6 {
@@ -17738,7 +17741,7 @@ textarea:focus {
   visibility: hidden;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
-  border-bottom: 2px solid #3599db;
+  border-bottom: 2px solid #DA5538;
 }
 
 @media only screen and (max-width: 767px) {
@@ -17755,7 +17758,7 @@ textarea:focus {
 .hero-slides .owl-next:hover,
 .hero-slides .owl-next:focus {
   background-color: #292929;
-  color: #3599db;
+  color: #DA5538;
 }
 
 .hero-slides .owl-next {
@@ -17775,7 +17778,6 @@ textarea:focus {
   z-index: 1;
   padding-left: 45px;
   padding-right: 45px;
-  border-bottom: 3px solid #3599db;
 }
 
 @media only screen and (max-width: 767px) {
@@ -17832,7 +17834,7 @@ textarea:focus {
 }
 
 .single-feature-area.active, .single-feature-area:hover, .single-feature-area:focus {
-  background-color: #3599db;
+  background-color: #DA5538;
   cursor: pointer;
   -webkit-box-shadow: 0 5px 70px rgba(0, 0, 0, 0.15);
           box-shadow: 0 5px 70px rgba(0, 0, 0, 0.15);
@@ -17872,7 +17874,7 @@ textarea:focus {
 }
 
 .single-feature-area.style-2 i {
-  color: #3599db;
+  color: #DA5538;
 }
 
 .single-feature-area.style-2 p {
@@ -17890,7 +17892,7 @@ textarea:focus {
 }
 
 .single-feature-area.style-2.active h3, .single-feature-area.style-2:hover h3, .single-feature-area.style-2:focus h3 {
-  color: #3599db;
+  color: #DA5538;
 }
 
 .single-feature-area.style-2.active p, .single-feature-area.style-2:hover p, .single-feature-area.style-2:focus p {
@@ -17927,7 +17929,7 @@ textarea:focus {
 .currency-calculator .calculator-first-part input {
   width: 85px;
   height: 53px;
-  border: 2px solid #3599db;
+  border: 2px solid #DA5538;
   border-radius: 0;
   margin-right: 12px;
   background-color: transparent;
@@ -18112,7 +18114,7 @@ textarea:focus {
 }
 
 .single-blog-area .blog-content .post-title:hover {
-  color: #3599db;
+  color: #DA5538;
 }
 
 .single-blog-area .blog-content p {
@@ -18133,7 +18135,7 @@ textarea:focus {
 }
 
 .single-blog-area .blog-content .meta-data a:first-child, .single-blog-area .blog-content .meta-data a:hover {
-  color: #3599db;
+  color: #DA5538;
 }
 
 .single-blog-area.blog-style-2 .blog-thumbnail {
@@ -18168,7 +18170,7 @@ textarea:focus {
 
 .blog-section-heading h3 {
   font-size: 30px;
-  border-bottom: 3px solid #3599db;
+  border-bottom: 3px solid #DA5538;
   display: inline-block;
   line-height: 1.5;
 }
@@ -18278,7 +18280,7 @@ textarea:focus {
 .newsletter-area {
   position: relative;
   z-index: 1;
-  background-color: #3599db;
+  background-color: #DA5538;
   padding: 70px 15px;
 }
 
@@ -18348,7 +18350,7 @@ textarea:focus {
   z-index: 10;
   font-size: 14px;
   text-transform: uppercase;
-  color: #3599db;
+  color: #DA5538;
   font-family: "Lato Regular", sans-serif;
   line-height: 1;
   font-weight: 700;
@@ -18410,7 +18412,7 @@ textarea:focus {
 }
 
 .main-footer-area .footer-widget .footer-social-info a:hover, .main-footer-area .footer-widget .footer-social-info a:focus {
-  color: #3599db;
+  color: #DA5538;
 }
 
 .main-footer-area .footer-widget .single--blog-post {
@@ -18431,7 +18433,7 @@ textarea:focus {
 }
 
 .main-footer-area .footer-widget .single--blog-post a:hover {
-  color: #3599db;
+  color: #DA5538;
 }
 
 .main-footer-area .footer-widget .single--blog-post a p {
@@ -18441,13 +18443,13 @@ textarea:focus {
 }
 
 .main-footer-area .footer-widget .single--blog-post a p:hover {
-  color: #3599db;
+  color: #DA5538;
 }
 
 .main-footer-area .footer-widget .single--blog-post span {
   margin-bottom: 0;
   font-size: 14px;
-  color: #3599db;
+  color: #DA5538;
 }
 
 .main-footer-area .footer-widget .useful-links li {
@@ -18468,7 +18470,7 @@ textarea:focus {
 }
 
 .main-footer-area .footer-widget .useful-links li a:hover, .main-footer-area .footer-widget .useful-links li a:focus {
-  color: #3599db;
+  color: #DA5538;
 }
 
 .bottom-footer-area {
@@ -18491,7 +18493,7 @@ textarea:focus {
 }
 
 .bottom-footer-area p a:hover {
-  color: #3599db;
+  color: #DA5538;
 }
 
 /* :: 12.0 Breadcumb Area CSS */
@@ -18502,9 +18504,9 @@ textarea:focus {
   height: 263px;
   background-image: url("/img/vitamedica_header.jpg") !important;
   background-position: center !important;
-  background: #0d104d;
-  background: -webkit-gradient(linear, left top, right top, from(#0d104d), to(#28408b));
-  background: linear-gradient(to right, #0d104d, #28408b);
+  background: #DA5538;
+  background: -webkit-gradient(linear, left top, right top, from(#DA5538), to(#FA8072));
+  background: linear-gradient(to right, #DA5538, #FA8072);
   padding-top: 120px;
 }
 
@@ -18577,7 +18579,7 @@ textarea:focus {
 .guideline-content .single-step {
   padding: 20px 20px 30px;
   background-color: #ffffff;
-  border-bottom: 3px solid #3599db;
+  border-bottom: 3px solid #DA5538;
   margin-bottom: 25px;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
@@ -18593,7 +18595,7 @@ textarea:focus {
   font-size: 44px;
   font-weight: 700;
   line-height: 1;
-  color: #3599db;
+  color: #DA5538;
   text-align: center !important;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
@@ -18709,13 +18711,13 @@ textarea:focus {
 }
 
 .contact-information .contact-social-info a:hover {
-  color: #3599db;
+  color: #DA5538;
 }
 
 .contact-information .single-contact-info .contact-icon i {
   display: inline-block;
   color: #ffffff;
-  background-color: #3599db;
+  background-color: #DA5538;
   width: 30px;
   height: 30px;
   text-align: center;
@@ -18744,7 +18746,7 @@ textarea:focus {
 }
 
 .contact-form-area .form-control:focus {
-  border-bottom: 3px solid #3599db;
+  border-bottom: 3px solid #DA5538;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -18779,13 +18781,13 @@ textarea:focus {
 .single-cool-fact h3 {
   font-size: 48px;
   margin-bottom: 0;
-  color: #3599db;
+  color: #DA5538;
 }
 
 .single-cool-fact .line {
   width: 35px;
   height: 5px;
-  background-color: #3599db;
+  background-color: #DA5538;
   margin: 20px auto;
 }
 
@@ -18815,7 +18817,7 @@ textarea:focus {
 
 .single-accordion h6 a {
   border-radius: 0;
-  background-color: #3599db;
+  background-color: #DA5538;
   color: #fff;
   border-bottom: 3px solid #292929;
   display: block;
@@ -18847,7 +18849,7 @@ textarea:focus {
 .single-accordion h6 a.collapsed {
   background-color: #eef3f6;
   color: #444;
-  border-bottom: 3px solid #3599db;
+  border-bottom: 3px solid #DA5538;
 }
 
 .single-accordion h6 a.collapsed span.accor-close {
@@ -18887,7 +18889,7 @@ textarea:focus {
 .cryptos-tabs-content .nav-tabs .nav-link {
   background-color: #eef3f6;
   color: #444;
-  border-bottom: 3px solid #3599db;
+  border-bottom: 3px solid #DA5538;
   padding: 0 15px;
   height: 50px;
   line-height: 50px;
@@ -18911,7 +18913,7 @@ textarea:focus {
 }
 
 .cryptos-tabs-content .nav-tabs .nav-link.active {
-  background-color: #3599db;
+  background-color: #DA5538;
   color: #292929;
   border-bottom: 3px solid #292929;
 }
@@ -18957,13 +18959,13 @@ textarea:focus {
   border-bottom-left-radius: 0.25rem;
   border-top-right-radius: 0;
   margin-right: -1px;
-  color: #3599db;
+  color: #DA5538;
   font-weight: 900;
 }
 
 .nav-tabs--left .nav-link.active:hover {
   background-color: #fff;
-  border-color: #0275d8 #fff #0275d8 #0275d8;
+  border-color: #DA5538 #fff #DA5538 #DA5538;
 }
 
 /** Media Quieres **/

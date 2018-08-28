@@ -37,8 +37,8 @@
                             <nav>
                                 <ul class="useful-links d-flex justify-content-between flex-wrap">
                                     <li><a href="/">Inicio</a></li>
-                                    <li><a href="{{route('quote')}}">Cotizar</a></li>
-                                    <li><a href="{{route('kinesiologist')}}">Aprende</a></li>
+                                    <li><a href="{{route('aboutUs')}}">Nosotros</a></li>
+                                    <li><a href="{{route('learn')}}">Aprende</a></li>
                                     <li><a href="{{route('videos')}}">Videos</a></li>
                                     <li><a href="{{route('contact')}}">Contacto</a></li>
                                 </ul>

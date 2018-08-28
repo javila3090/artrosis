@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Vitamedica</title>
+    <title>Centro de artrosis</title>
 
     <!-- Favicon -->
     <link rel="icon" href="{{asset('img/favicon.ico')}}">
@@ -22,9 +22,9 @@
 
 <body>
     <!-- ##### Preloader ##### -->
-    <div id="preloader">
+    <!--<div id="preloader">
         <i class="circle-preloader"></i>
-    </div>
+    </div>-->
 
     <!-- ##### Header Area Start ##### -->
     <header class="header-area">
