@@ -7,6 +7,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-12">
+                <br>
                 <div class="section-heading mx-auto section-padding-50-0">
                     <h3 class="text-center">{{$aboutUs->title}}</h3>
                     <div class="heading-line"></div>
