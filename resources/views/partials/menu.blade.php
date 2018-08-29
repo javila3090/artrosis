@@ -5,7 +5,7 @@
                     <nav class="classy-navbar justify-content-between" id="cryptosNav">
 
                         <!-- Logo -->
-                        <a href="/" class="title-regular size-18px">Centro de tratamiento de Artrosis</a>
+                        <a href="/"><img src="{{asset('img/logo.png')}}" class="nav-brand float-left img-fluid" width="170"></a>
 
 
                         <!-- Navbar Toggler -->
