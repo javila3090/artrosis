@@ -7,11 +7,21 @@ use App\BannerType;
 use App\Section;
 use App\CompanyInfo;
 use App\Post;
-
+use SEOMeta;
+use OpenGraph;
+use Twitter;
+## or
+use SEO;
 
 class HomeController extends Controller
 {
     public function index(){
+
+        SEO::setTitle('Inicio');
+        SEO::setDescription('Home page artrosis site');
+        SEO::opengraph()->setUrl('http://artrosis.dev.com');
+        SEO::opengraph()->addProperty('type', 'home');
+        SEO::twitter()->setSite('@jcesaravila');
 
         $homeBanners = Banner::where('banner_type_id',1)->get();
         $aboutUs = Section::where('section_type_id',1)->first();
@@ -34,6 +44,12 @@ class HomeController extends Controller
 
     public function contact(){
 
+        SEO::setTitle('Contacto');
+        SEO::setDescription('Contact page artrosis site');
+        SEO::opengraph()->setUrl('http://artrosis.dev.com');
+        SEO::opengraph()->addProperty('type', 'home');
+        SEO::twitter()->setSite('@jcesaravila');
+
         $companyInfo = CompanyInfo::orderBy('created_at', 'desc')->first();
         //Mapa
         $config = array();
@@ -47,13 +63,13 @@ class HomeController extends Controller
             }
             centreGot = true;';
 
-            app('map')->initialize($config);
+        app('map')->initialize($config);
 
-            $marker = array();
-            app('map')->add_marker($marker);
+        $marker = array();
+        app('map')->add_marker($marker);
 
-            $map = app('map')->create_map();
-            $map = array('map_js' => $map['js'], 'map_html' => $map['html']);
+        $map = app('map')->create_map();
+        $map = array('map_js' => $map['js'], 'map_html' => $map['html']);
 
         return view('contact',compact('map','companyInfo'));
     }
@@ -76,6 +92,12 @@ class HomeController extends Controller
 
     public function aboutUs(){
 
+        SEO::setTitle('Nosotros');
+        SEO::setDescription('About us page artrosis site');
+        SEO::opengraph()->setUrl('http://artrosis.dev.com');
+        SEO::opengraph()->addProperty('type', 'home');
+        SEO::twitter()->setSite('@jcesaravila');
+
         $aboutUs = Section::where('section_type_id',1)->first();
         $mission = Section::where('section_type_id',8)->first();
         $vision = Section::where('section_type_id',9)->first();
@@ -92,6 +114,12 @@ class HomeController extends Controller
     }
 
     public function requirements(){
+
+        SEO::setTitle('Requisitos');
+        SEO::setDescription('Requirements page artrosis site');
+        SEO::opengraph()->setUrl('http://artrosis.dev.com');
+        SEO::opengraph()->addProperty('type', 'home');
+        SEO::twitter()->setSite('@jcesaravila');
 
         $aboutUs = Section::where('section_type_id',1)->first();
         $special_atentions = Section::where('section_type_id',13)->first();
@@ -122,18 +150,37 @@ class HomeController extends Controller
 
     public function agreement(){
 
+        SEO::setTitle('Convenios');
+        SEO::setDescription('Agreement page artrosis site');
+        SEO::opengraph()->setUrl('http://artrosis.dev.com');
+        SEO::opengraph()->addProperty('type', 'home');
+        SEO::twitter()->setSite('@jcesaravila');
+
         $companyInfo = CompanyInfo::orderBy('created_at', 'desc')->first();
 
         return view('agreement',compact('companyInfo'));
     }
 
     public function entities(){
+
+        SEO::setTitle('Entidades');
+        SEO::setDescription('Entities page artrosis site');
+        SEO::opengraph()->setUrl('http://artrosis.dev.com');
+        SEO::opengraph()->addProperty('type', 'home');
+        SEO::twitter()->setSite('@jcesaravila');
+        
         $companyInfo = CompanyInfo::orderBy('created_at', 'desc')->first();
 
         return view('fonasa_isapre',compact('companyInfo'));
     }
 
     public function learn(){
+
+        SEO::setTitle('Aprende');
+        SEO::setDescription('Learn page artrosis site');
+        SEO::opengraph()->setUrl('http://artrosis.dev.com');
+        SEO::opengraph()->addProperty('type', 'home');
+        SEO::twitter()->setSite('@jcesaravila');
 
         $osteoarthritis = Section::where('section_type_id',15)->first();
         $osteoporosis = Section::where('section_type_id',17)->first();
@@ -176,6 +223,12 @@ class HomeController extends Controller
     }
 
     public function videos(){
+
+        SEO::setTitle('Videos');
+        SEO::setDescription('Videos page artrosis site');
+        SEO::opengraph()->setUrl('http://artrosis.dev.com');
+        SEO::opengraph()->addProperty('type', 'home');
+        SEO::twitter()->setSite('@jcesaravila');
 
         $companyInfo = CompanyInfo::orderBy('created_at', 'desc')->first();
 
