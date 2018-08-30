@@ -184,9 +184,11 @@ class HomeController extends Controller
 
         $osteoarthritis = Section::where('section_type_id',15)->first();
         $osteoporosis = Section::where('section_type_id',17)->first();
+        $osteoarthritis_tips = Section::where('section_type_id',18)->first();
+        $osteoporosis_tips = Section::where('section_type_id',19)->first();
         $companyInfo = CompanyInfo::orderBy('created_at', 'desc')->first();
 
-        return view('learn',compact('companyInfo','osteoarthritis','osteoporosis'));
+        return view('learn',compact('companyInfo','osteoarthritis','osteoporosis','osteoarthritis_tips','osteoporosis_tips'));
     }
 
     public function kinesiologist_areas(){

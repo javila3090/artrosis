@@ -21,26 +21,58 @@
                     <div class="row">
                         <div class="col-md-3">
                             <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="navigation" style="letter-spacing: 1px">
+                                @if(isset($osteoarthritis) && $osteoarthritis!='')
                                 <li class="nav-item">
                                     <a href="#tab_1" class="nav-link active" data-toggle="tab" role="tab" aria-controls="tab_1">{{$osteoarthritis->title}}</a>
                                 </li>
+                                @endif
+                                @if(isset($osteoporosis) && $osteoporosis!='')
                                 <li class="nav-item">
                                     <a href="#tab_2" class="nav-link" data-toggle="tab" role="tab" aria-controls="tab_2">{{$osteoporosis->title}}</a>
-                                </li>                                
+                                </li>
+                                @endif
+                                @if(isset($osteoarthritis_tips) && $osteoarthritis_tips!='')
+                                <li class="nav-item">
+                                    <a href="#tab_3" class="nav-link" data-toggle="tab" role="tab" aria-controls="tab_3">{{$osteoarthritis_tips->title}}</a>
+                                </li>
+                                @endif                                
+                                @if(isset($osteoporosis_tips) && $osteoporosis_tips!='')
+                                <li class="nav-item">
+                                    <a href="#tab_4" class="nav-link" data-toggle="tab" role="tab" aria-controls="tab_4">{{$osteoporosis_tips->title}}</a>
+                                </li>
+                                @endif
                             </ul>
                         </div>
                         <div class="col-md-9">
                             <div class="tab-content">
+                                @if(isset($osteoarthritis) && $osteoarthritis!='')
                                 <div class="tab-pane fade show active" id="tab_1" role="tabpanel" style="padding: 20px;">
                                     <h2>{{$osteoarthritis->title}}</h2>
                                     <br>
                                     {!!$osteoarthritis->content!!}
                                 </div>
+                                @endif
+                                @if(isset($osteoporosis) && $osteoporosis!='')
                                 <div class="tab-pane fade" id="tab_2" role="tabpanel" style="padding: 20px;">
                                     <h2>{{$osteoporosis->title}}</h2>
                                     <br>
                                     {!!$osteoporosis->content!!}
                                 </div>
+                                @endif
+                                @if(isset($osteoarthritis_tips) && $osteoarthritis_tips!='')
+                                <div class="tab-pane fade" id="tab_3" role="tabpanel" style="padding: 20px;">
+                                    <h2>{{$osteoarthritis_tips->title}}</h2>
+                                    <br>
+                                    {!!$osteoarthritis_tips->content!!}
+                                </div>
+                                @endif
+                                @if(isset($osteoporosis_tips) && $osteoporosis_tips!='')
+                                <div class="tab-pane fade" id="tab_4" role="tabpanel" style="padding: 20px;">
+                                    <h2>{{$osteoporosis_tips->title}}</h2>
+                                    <br>
+                                    {!!$osteoporosis_tips->content!!}
+                                </div>
+                                @endif
                             </div>
                         </div>
                     </div>

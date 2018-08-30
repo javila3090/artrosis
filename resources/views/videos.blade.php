@@ -65,6 +65,16 @@
                         <a href="https://www.youtube.com/watch?v=zi3RIXHFSXo" class="videobtn"><img src="img/video-btn.png" alt=""></a>
                     </div>
                 </div>
+            </div>  
+            <div class="col-12 col-md-4">
+                <h6>Ejercicios para la artrosis de rodilla</h6>
+                <hr>
+                <div class="video-area mb-100">
+                    <img src="img/artrosis_video_6.png" alt="">
+                    <div class="video-btn">
+                        <a href="https://www.youtube.com/watch?v=96ORIKWRfRc" class="videobtn"><img src="img/video-btn.png" alt=""></a>
+                    </div>
+                </div>
             </div>                    
         </div>
     </div>
