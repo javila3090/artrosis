@@ -19,7 +19,7 @@
             </div>
             <div class="col-12 col-md-7">
                 <div class="about-content resp-padding-40-0">
-                    <div class="section-heading wow fadeInUpBig">
+                    <div class="section-heading wow fadeInUpBig size-16px">
                         <h3>{{$requirements->title}}</h3>
                         <h5>{{$requirements->subtitle}}</h5>
                         <p>{!!$requirements->content!!}</p>                    
@@ -42,7 +42,7 @@
             </div>
             <div class="col-12 col-md-7">
                 <div class="about-content resp-padding-40-0">
-                    <div class="section-heading wow fadeInUpBig">
+                    <div class="section-heading wow fadeInUpBig size-16px">
                         <h3>{{$special_atentions->title}}</h3>
                         <h5>{{$special_atentions->subtitle}}</h5>
                         <p>{!!$special_atentions->content!!}</p>                    
@@ -65,7 +65,7 @@
             </div>
             <div class="col-12 col-md-7">
                 <div class="about-content resp-padding-40-0">
-                    <div class="section-heading wow fadeInUpBig">
+                    <div class="section-heading wow fadeInUpBig size-16px">
                         <h3>{{$company_programs->title}}</h3>
                         <h5>{{$company_programs->subtitle}}</h5>
                         <p>{!!$company_programs->content!!}</p>                    

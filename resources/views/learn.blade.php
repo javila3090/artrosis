@@ -46,28 +46,28 @@
                         <div class="col-md-9">
                             <div class="tab-content">
                                 @if(isset($osteoarthritis) && $osteoarthritis!='')
-                                <div class="tab-pane fade show active" id="tab_1" role="tabpanel" style="padding: 20px;">
+                                <div class="tab-pane fade show active size-16px" id="tab_1" role="tabpanel" style="padding: 20px;">
                                     <h2>{{$osteoarthritis->title}}</h2>
                                     <br>
                                     {!!$osteoarthritis->content!!}
                                 </div>
                                 @endif
                                 @if(isset($osteoporosis) && $osteoporosis!='')
-                                <div class="tab-pane fade" id="tab_2" role="tabpanel" style="padding: 20px;">
+                                <div class="tab-pane fade size-16px" id="tab_2" role="tabpanel" style="padding: 20px;">
                                     <h2>{{$osteoporosis->title}}</h2>
                                     <br>
                                     {!!$osteoporosis->content!!}
                                 </div>
                                 @endif
                                 @if(isset($osteoarthritis_tips) && $osteoarthritis_tips!='')
-                                <div class="tab-pane fade" id="tab_3" role="tabpanel" style="padding: 20px;">
+                                <div class="tab-pane fade size-16px" id="tab_3" role="tabpanel" style="padding: 20px;">
                                     <h2>{{$osteoarthritis_tips->title}}</h2>
                                     <br>
                                     {!!$osteoarthritis_tips->content!!}
                                 </div>
                                 @endif
                                 @if(isset($osteoporosis_tips) && $osteoporosis_tips!='')
-                                <div class="tab-pane fade" id="tab_4" role="tabpanel" style="padding: 20px;">
+                                <div class="tab-pane fade size-16px" id="tab_4" role="tabpanel" style="padding: 20px;">
                                     <h2>{{$osteoporosis_tips->title}}</h2>
                                     <br>
                                     {!!$osteoporosis_tips->content!!}

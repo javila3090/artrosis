@@ -20,48 +20,48 @@
 @import 'classy-nav.min';
 
 @font-face {
-  font-family: 'Baloo Regular';
-  src: url(/fonts/Baloo-Regular.ttf);
+    font-family: 'Baloo Regular';
+    src: url(/fonts/Baloo-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'Lato Light';
-  src: url(/fonts/Lato-Light.ttf);
+    font-family: 'Lato Light';
+    src: url(/fonts/Lato-Light.ttf);
 }
 
 @font-face {
-  font-family: 'Lato Regular';
-  src: url(/fonts/Lato-Regular.ttf);
+    font-family: 'Lato Regular';
+    src: url(/fonts/Lato-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'Lato Bold';
-  src: url(/fonts/Lato-Bold.ttf);
+    font-family: 'Lato Bold';
+    src: url(/fonts/Lato-Bold.ttf);
 }
 
 @font-face {
-  font-family: 'Sahitya Bold';
-  src: url(/fonts/Sahitya-Bold.ttf);
+    font-family: 'Sahitya Bold';
+    src: url(/fonts/Sahitya-Bold.ttf);
 }
 
 @font-face {
-  font-family: 'Sahitya Regular';
-  src: url(/fonts/Sahitya-Regular.ttf);
+    font-family: 'Sahitya Regular';
+    src: url(/fonts/Sahitya-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'Philosopher Regular';
-  src: url(/fonts/Philosopher-Regular.ttf);
+    font-family: 'Philosopher Regular';
+    src: url(/fonts/Philosopher-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'Philosopher SemiBold';
-  src: url(/fonts/Philosopher-SemiBold.ttf);
+    font-family: 'Philosopher SemiBold';
+    src: url(/fonts/Philosopher-SemiBold.ttf);
 }
 
 @font-face {
-  font-family: 'Philosopher Bold';
-  src: url(/fonts/Philosopher-Bold.ttf);
+    font-family: 'Philosopher Bold';
+    src: url(/fonts/Philosopher-Bold.ttf);
 }
 
 /* :: 3.0 Base CSS */
@@ -115,6 +115,12 @@ a:focus {
     font-size: 16px;
 }
 
+.hover-icon:hover,
+.hover-icon:focus
+{
+    color:#292929 !important;
+}
+
 ul,
 ol {
     margin: 0;
@@ -126,9 +132,9 @@ img {
 }
 
 .box-shadow{
-  -webkit-box-shadow: 3px 9px 25px -6px rgba(0,0,0,0.75);
-  -moz-box-shadow: 3px 9px 25px -6px rgba(0,0,0,0.75);
-  box-shadow: 3px 9px 25px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 9px 25px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 9px 25px -6px rgba(0,0,0,0.75);
+    box-shadow: 3px 9px 25px -6px rgba(0,0,0,0.75);
 }
 
 .responsive{
@@ -138,55 +144,55 @@ img {
 /* Tamaño Fuentes
 ------------------------------------------------------------------ */
 .size-48px {
-  font-size: $size-48 !important;
+    font-size: $size-48 !important;
 }
 .size-40px {
-  font-size: $size-40 !important;
+    font-size: $size-40 !important;
 }
 .size-38px {
-  font-size: $size-38 !important;
+    font-size: $size-38 !important;
 }
 .size-36px {
-  font-size: $size-36 !important;
+    font-size: $size-36 !important;
 }
 .size-34px {
-  font-size: $size-34 !important;
+    font-size: $size-34 !important;
 }
 .size-32px {
-  font-size: $size-32 !important;
+    font-size: $size-32 !important;
 }
 .size-30px {
-  font-size: $size-30 !important;
+    font-size: $size-30 !important;
 }
 .size-28px {
-  font-size: $size-28 !important;
+    font-size: $size-28 !important;
 }
 .size-26px {
-  font-size: $size-26 !important;
+    font-size: $size-26 !important;
 }
 .size-24px {
-  font-size: $size-24 !important;
+    font-size: $size-24 !important;
 }
 .size-22px {
-  font-size: $size-22 !important;
+    font-size: $size-22 !important;
 }
 .size-20px {
-  font-size: $size-20 !important;
+    font-size: $size-20 !important;
 }
 .size-18px {
-  font-size: $size-18 !important;
+    font-size: $size-18 !important;
 }
 .size-16px {
-  font-size: $size-16 !important;
+    font-size: $size-16 !important;
 }
 .size-14px {
-  font-size: $size-14 !important;
+    font-size: $size-14 !important;
 }
 .size-12px {
-  font-size: $size-12 !important;
+    font-size: $size-12 !important;
 }
 .size-10px {
-  font-size: $size-10 !important;
+    font-size: $size-10 !important;
 }
 
 .title-regular{
@@ -229,6 +235,10 @@ img {
 
 .color-text{
     color: $text-color !important;
+}
+
+.color-title{
+    color: $bg-default !important;
 }
 
 .card-fonasa{
@@ -274,11 +284,11 @@ img {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-            user-select: none;
+    user-select: none;
     -webkit-touch-callout: none;
     -khtml-user-select: none;
     -ms-touch-action: pan-y;
-        touch-action: pan-y;
+    touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -304,10 +314,10 @@ img {
 .slick-slider .slick-list
 {
     -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 .slick-track
@@ -865,7 +875,7 @@ textarea:focus {
             }
         }
         breakpoint-off .classynav ul li .dropdown {
-            
+
             background-color: #fff !important;
             top: 120%;
         }
@@ -979,7 +989,7 @@ textarea:focus {
             height: 500px;
         }
         h2 {
-            font-size: 38px;
+            font-size: 44px;
             color: $white-color;
             margin-bottom: 30px;
             font-weight: 700;
@@ -1113,6 +1123,8 @@ textarea:focus {
         i,
         h3,
         h4,
+        h1,
+        h6,
         li,
         hr,
         p {
@@ -1124,6 +1136,12 @@ textarea:focus {
                 border-bottom-color: $heading-color;
                 color: $heading-color;
             }
+        }
+        .hover-icon{
+            color: $white-color !important;
+        }
+        .heading-line{
+            background-color: $white-color !important;
         }
     }
     &.style-2 {
@@ -1801,35 +1819,35 @@ textarea:focus {
 }
 
 .validation {
-  color: red;
-  display: none;
-  margin: 0;
-  font-weight: 400;
-  font-size: 13px;
+    color: red;
+    display: none;
+    margin: 0;
+    font-weight: 400;
+    font-size: 13px;
 }
 
 #sendmessage {
-  color: green;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 15px;
+    color: green;
+    display: none;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
 }
 
 #errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
+    color: red;
+    display: none;
+    border: 1px solid red;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
 #sendmessage.show,
 #errormessage.show,
 .show {
-  display: block;
+    display: block;
 }
 
 .contact-information {
@@ -2045,24 +2063,24 @@ textarea:focus {
         display: flex;
         flex-flow: column nowrap;
     }
-    
+
     &--left {
         margin: 0 $padding-base;
-        
+
         .nav-item + .nav-item {
             margin-top: .25rem;
         }
-        
+
         .nav-link {
             transition: border-color .125s ease-in;
             white-space: nowrap;
-            
+
             &:hover {
                 background-color: lighten($color-border, 10%);
                 border-color: transparent;
             }
         }
-        
+
         .nav-link.active {
             border-bottom-color: $color-border;
             border-right-color: $color-body;
@@ -2071,7 +2089,7 @@ textarea:focus {
             margin-right: -1px;
             color: $bg-default;
             font-weight: 900;
-            
+
             &:hover {
                 background-color: $color-body;
                 border-color: $color-link $color-body $color-link $color-link;

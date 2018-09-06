@@ -17,7 +17,7 @@
         <div class="row align-items-center" >
             <div class="col-12 col-md-6">
                 <div class="about-content">
-                    <div class="section-heading wow bounceInUp">
+                    <div class="section-heading wow bounceInUp size-16px">
                         <h5>{{$aboutUs->subtitle}}</h5>
                         <p>{!!$aboutUs->content!!}</p>                        
                     </div>

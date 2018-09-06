@@ -11,12 +11,12 @@
                     <div class="row h-100 align-items-center">
                         <div class="col-md-8 col-xs-12">
                             <div class="hero-slides-content text-left">
-                                <h2 data-animation="{{$i==1 ? 'bounceInDown' : 'bounceInRight'}}" class="title-regular color-text" data-delay="100ms">{{$v->title}}</h2>
+                                <h2 data-animation="{{$i==1 ? 'bounceInDown' : 'bounceInRight'}}" class="title-regular color-title" data-delay="100ms">{{$v->title}}</h2>
                                 @if($v->subtitle)
                                     <h6 data-animation="{{$i==1 ? 'lightSpeedIn' : 'rollIn'}}" class="subtitle-regular size-28px color-text" data-delay="400ms">{{$v->subtitle}}</h6>
                                 @endif
                                 @if($v->caption)
-                                    <h6 data-animation="{{$i==1 ? 'bounceInUp' : 'rotateIn'}}" class="subtitle-regular banner-caption size-16px color-text" data-delay="700ms">{!!$v->caption!!}</h6>
+                                    <h6 data-animation="{{$i==1 ? 'bounceInUp' : 'rotateIn'}}" class="subtitle-regular banner-caption size-22px color-text" data-delay="700ms">{!!$v->caption!!}</h6>
                                 @endif
                                 @if($v->button)
                                     <a href="{{route($v->target->display_name)}}" class="btn btn-info size-18px" data-animation="fadeInUp" data-delay="700ms"><b>{!!$v->button!!}</b></a>
